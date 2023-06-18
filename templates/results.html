@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+    <title>Paper Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-3 my-2 text-left">
+			{% for item in name %}
+				<h1 class="display-6 fw"> {{item}}</h1>
+				<h1 class="display-6 fw"> &nbsp </h1>
+			{% endfor %}
+        </div>
+		<div class="px-4 py-3 my-2 text-center">
+            <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg px-4 gap-3">Back home</a>
+        </div>
+     </main>      
+   </body>
+</html>

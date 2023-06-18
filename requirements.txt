@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+seaborn
+tensorflow
+tensorflow-hub
+scikit-learn
+Flask==2.0.2
+gunicorn
+
